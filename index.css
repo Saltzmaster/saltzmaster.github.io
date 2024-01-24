@@ -3,7 +3,6 @@ body {
     background-color: #D7BE82;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 header {
@@ -20,8 +19,8 @@ section {
     background-color: #6F7054;
     box-shadow: 5px 5px 10px ghostwhite;
     border-radius: 8px;
-    position: relative;
-    overflow: hidden;
+    /* position: relative;
+    overflow: hidden; */
 }
 
 .star {
@@ -62,7 +61,7 @@ h2 {
 
 .project a {
     text-decoration: none;
-    color: #007BFF;
+    color: #1100ff;
 }
 
 .project:hover {

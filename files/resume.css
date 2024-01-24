@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #CEC3C1;
+    background-color: #5c5654;
   }
 
   header {
@@ -16,7 +16,7 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #B399A3;
+    background-color: rgb(196, 186, 186);
     border-radius: 8px;
     box-shadow: 5px 5px 10px #8a4f59;
   }
