@@ -90,3 +90,10 @@ footer {
 footer :hover {
     text-align: right;
 }
+
+.hint {
+    position: absolute;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+}

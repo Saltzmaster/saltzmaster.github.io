@@ -71,3 +71,28 @@ currentYearElement.innerHTML = `&copy;${currentYear}`;
             star.style.top = randomY + 'px';
             section.appendChild(star);
         }        
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('header');
+            const hintElement = document.createElement('h6');
+            hintElement.textContent = 'Try clicking around';
+            hintElement.className = 'hint';
+            document.body.appendChild(hintElement);
+
+            hintElement.addEventListener('click', function () {
+                moveHint();
+            });
+
+            function moveHint() {
+                const headerWidth = header.offsetWidth;
+                const headerHeight = header.offsetHeight;
+
+                const newLeft = Math.random() * (headerWidth - hintElement.offsetWidth);
+                const newTop = Math.random() * (headerHeight - hintElement.offsetHeight);
+
+                hintElement.style.left = newLeft + 'px';
+                hintElement.style.top = newTop + 'px';
+            }
+
+            moveHint();
+        });
