@@ -19,8 +19,8 @@ section {
     background-color: #6F7054;
     box-shadow: 5px 5px 10px ghostwhite;
     border-radius: 8px;
-    /* position: relative;
-    overflow: hidden; */
+    position: relative;
+    overflow: hidden;
 }
 
 .star {
