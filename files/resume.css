@@ -49,15 +49,18 @@ body {
     gap: 10px;
   }
 
-  .awards li::before {
+  .awards p::before {
     content: "• ";
-    color: black;
+    color: #573F47;
   }
 
   footer {
+    text-align: center;
+  }
+
+  footer p {
     line-height: 10px;
     color: #240115;
-    text-align: center;
   }
 
   footer a {

@@ -2,6 +2,12 @@ var defaultHeaderColor = '#7A4419';
 var defaultBodyColor = '#D7BE82';
 var rainingStars = false;
 
+const currentYearElement = document.querySelector('#year');
+const currentYear = new Date().getFullYear();
+
+currentYearElement.innerHTML = `&copy;${currentYear}`;
+
+
         function changeHeaderColor() {
             var header = document.querySelector('header');
             header.style.backgroundColor = getRandomColor();

@@ -81,3 +81,12 @@ h2 {
     background-color: #28A745;
     border-radius: 4px;
 }
+
+footer {
+    text-align: center;
+    margin: 2% 0;
+}
+
+footer :hover {
+    text-align: right;
+}
