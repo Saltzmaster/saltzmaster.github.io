@@ -1,5 +1,3 @@
-var defaultHeaderColor = '#7A4419';
-var defaultBodyColor = '#D7BE82';
 var rainingStars = false;
 
 const currentYearElement = document.querySelector('#year');
@@ -7,34 +5,21 @@ const currentYear = new Date().getFullYear();
 
 currentYearElement.innerHTML = `&copy;${currentYear}`;
 
+const backgroundImages = [
+    'url("img/starryNight.jpg")',
+    'url("img/starryNight2.jpg")',
+    'url("img/starryNight3.jpg")',
+    'url("img/starryNight4.jpg")',
+    'url("img/starryNight5.jpg")',
+  ];
 
-        function changeHeaderColor() {
-            var header = document.querySelector('header');
-            header.style.backgroundColor = getRandomColor();
-        }
-
-        function resetHeaderColor() {
-            var header = document.querySelector('header');
-            header.style.backgroundColor = defaultHeaderColor;
-            var body = document.querySelector('body');
-            body.style.backgroundColor = defaultBodyColor
-        }
-
-        function getRandomColor() {
-            var letters = '0123456789ABCDEF';
-            var color = '#';
-            for (var i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-        function colorExplosion() {
-            var body = document.querySelector('body');
-            var explosionColor = getRandomColor();
-            body.style.backgroundColor = explosionColor;
-        }
-
+  function colorExplosion() {
+    var body = document.querySelector('body');
+    var randomIndex = Math.floor(Math.random() * backgroundImages.length);
+    var explosionImage = backgroundImages[randomIndex];
+    body.style.backgroundImage = explosionImage;
+  }
+  
         function toggleTwinklingStars() {
             event.stopPropagation();
             var section = document.querySelector('section');
@@ -48,7 +33,7 @@ currentYearElement.innerHTML = `&copy;${currentYear}`;
         }
         
         function startTwinklingStars(section) {
-            for (var i = 0; i < 75; i++) {
+            for (var i = 0; i < 115; i++) {
                 createStar(section);
             }
         }
@@ -75,7 +60,7 @@ currentYearElement.innerHTML = `&copy;${currentYear}`;
         document.addEventListener('DOMContentLoaded', function () {
             const header = document.querySelector('header');
             const hintElement = document.createElement('h6');
-            hintElement.textContent = 'Try clicking around';
+            hintElement.textContent = 'Try clicking';
             hintElement.className = 'hint';
             document.body.appendChild(hintElement);
 

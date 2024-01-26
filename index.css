@@ -1,26 +1,41 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #D7BE82;
     margin: 0;
     padding: 0;
+    background: url("img/starryNight5.jpg") center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header {
-    background-color: #7A4419;
-    color: #400406;
+    color: rgb(160, 159, 159);
     text-align: center;
     padding: 1em;
+    line-height: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+header h4 {
+    padding-right: 5%;
+}
+
+header p {
+    padding-top: 20px;
 }
 
 section {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #6F7054;
+    background-color: rgba(55, 4, 138, 0.7); /* Semi-transparent background */
     box-shadow: 5px 5px 10px ghostwhite;
     border-radius: 8px;
     position: relative;
     overflow: hidden;
+    color: white;
+    transition: background-color 0.3s;
 }
 
 .star {
@@ -49,38 +64,31 @@ section {
     }
 }
 
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
 h2 {
     color: black;
 }
 
 .project {
-    margin-bottom: 20px;
+    margin: 10px;
     padding: 15px;
     border-radius: 8px;
+    border: 1px solid #805927;
 }
 
 .project a {
     text-decoration: none;
-    color: #1100ff;
+    color: white;
 }
 
 .project:hover {
-    border: 1px solid #78501A;
-    background-color: #400406;
-    color: wheat;
-}
-
-#resetColorButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 8px;
-    cursor: pointer;
-    border: none;
-    color: #fff;
-    background-color: #28A745;
-    border-radius: 4px;
-}
+    border: 1px solid #805927;
+    background-color: rgba(64, 4, 6, 0.7);;
+    color: #999494;
+} 
 
 footer {
     text-align: center;
@@ -94,6 +102,7 @@ footer :hover {
 .hint {
     position: absolute;
     font-size: 14px;
-    color: black;
+    color: yellowgreen;
     cursor: pointer;
+    z-index: 2;
 }
