@@ -12,6 +12,26 @@ body {
     padding: 20px 0;
   }
 
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #5c5654;
+    background-color: rgb(55, 4, 138); 
+    color: white;
+    border-radius: 5px; 
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgb(64, 4, 6);
+    color: #999494;
+}
+
   section {
     max-width: 800px;
     margin: 20px auto;
@@ -47,7 +67,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-  }
+}
 
   .awards p::before {
     content: "• ";
@@ -65,11 +85,4 @@ body {
 
   footer a {
     text-decoration: none;
-  }
-
-  button {
-    padding: 4px;
-    background-color: wheat;
-    color: black;
-    margin-bottom: 2%;
   }
