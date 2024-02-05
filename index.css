@@ -71,6 +71,13 @@ h1 {
 }
 h2 {
     color: black;
+    text-align: center;
+}
+
+h2:hover {
+    background: linear-gradient(to right, #ff0000, #ff008c);
+    background-clip: text;
+    color: transparent;
 }
 
 .project {
@@ -93,12 +100,13 @@ h2 {
 
 footer {
     text-align: center;
-    color: navy;
+    color: white;
     margin: 2% 0;
 }
 
-footer :hover {
-    text-align: right;
+footer p:hover {
+    color: #805927;
+    padding-right: 15%;
 }
 
 .hint {
