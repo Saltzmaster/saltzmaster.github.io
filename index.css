@@ -10,6 +10,10 @@ body {
     cursor: url('curser.ico'), auto;
 }
 
+html {
+    background-color: black;
+}
+
 header {
     color: rgb(160, 159, 159);
     text-align: center;
