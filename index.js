@@ -8,9 +8,9 @@ currentYearElement.innerHTML = `&copy;${currentYear}`;
 const backgroundImages = [
     'url("img/starryNight.jpg")',
     'url("img/starryNight2.jpg")',
-    'url("img/starryNight3.jpg")',
-    'url("img/starryNight4.jpg")',
-    'url("img/starryNight5.jpg")',
+    'url("img/starryNight3.webp")',
+    'url("img/starryNight4.webp")',
+    'url("img/starryNight5.webp")',
   ];
 
   function colorExplosion() {

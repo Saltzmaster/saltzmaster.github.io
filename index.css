@@ -3,10 +3,11 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
-    background: url("img/starryNight5.jpg") center/cover no-repeat;
+    background: url("img/starryNight5.webp") center/cover no-repeat;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: url('curser.ico'), auto;
 }
 
 header {
