@@ -92,7 +92,7 @@ h2:hover {
     border: 1px solid #805927;
 }
 
-.project a {
+a {
     text-decoration: none;
     color: white;
 }
@@ -107,6 +107,11 @@ footer {
     text-align: center;
     color: white;
     margin: 2% 0;
+}
+
+footer a:hover {
+    color: #805927;
+    padding-left: 15%;
 }
 
 footer p:hover {

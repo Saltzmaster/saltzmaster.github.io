@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generation</title>
+    <link rel="stylesheet" href="qrcode.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.0"></script>
+</head>
+<body>
+    <header>
+        <h1>QR Code Generator</h1>
+    </header>
+    <main>
+        <section class="container">
+            <label for="urlInput">Enter URL: </label>
+            <input type="text" id="urlInput" placeholder="https://example.com">
+            <button id="generateQRCode">Generate QR Code</button>
+            <div id="qrcode"></div>
+        </section>
+    </main>
+    <script src="qrcode.js"></script>
+</body>
+</html>
