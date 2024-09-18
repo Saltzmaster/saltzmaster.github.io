@@ -6,10 +6,20 @@ body {
   }
 
   header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #5bb6bb;
     color: #240115;
     text-align: center;
     padding: 20px 0;
+  }
+
+  header img {
+    border-radius: 50%;
+    margin-right: 2%;
+    max-width: 15%;
+    max-height: auto;
   }
 
   button {
@@ -69,7 +79,7 @@ button:hover {
     gap: 10px;
 }
 
-  .awards p::before {
+  .bullet::before {
     content: "• ";
     color: #573F47;
   }
@@ -85,4 +95,5 @@ button:hover {
 
   footer a {
     text-decoration: none;
+    color: #240115;
   }

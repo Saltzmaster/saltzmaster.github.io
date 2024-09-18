@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="resume.css">
     <link rel="stylesheet" href="bigger.css">
     <title>Ty Saltzgiver</title>
@@ -10,16 +11,22 @@
 </head>
 <body>
     <header>
+      <img src="myPic.jpeg" alt="My Profile Picture">
         <a class="homepage" href="https://saltzmaster.github.io/">
           <button>View My Portfolio</button>
         </a>
-        <h1>Ty Saltzgiver</h1>
+        <div class="header-info">
+          <h1>Ty Saltzgiver</h1>
         <div class="contact-info">
-          <p>(801) 234-0155</p>
-          <p>|</p>
-          <p>tysaltz@gmail.com</p>
-          <p>|</p>
-          <a href="https://linkedin.com/in/ty-saltz" target="_blank">linkedin</a>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> (801) 234-0155</p>
+            <p> | </p>
+            <p><i class="fas fa-envelope"></i> tysaltz@gmail.com</p>
+            <p> | </p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/ty-saltz" target="_blank">Linkedin</a></p>
+        </div>
+        
+        </div>
         </div>
       </header>
     <main>
@@ -28,7 +35,8 @@
         <ul>
           <li>
             <h3>Brigham Young University - Idaho</h3>
-            <p>Bachelor in Computer Science</p>
+            <p><strong>Bachelor in Computer Science</strong></p>
+            <p><strong>Certificate in Web Development</strong></p>
             <p>Expected Graduation - December 2025</p>
             <p>Cumulative GPA 3.45</p>
             <p>Rexburg, ID</p>
@@ -42,17 +50,17 @@
           <li>
             <h3>Programming Languages</h3>
             <p>
-              Proficient: HTML, CSS, C#<br>
-              <br>Familiar: Python, JavaScript<br>
-              <br>Exposure: C++, Erlang, Rust
+              <strong>Proficient:</strong> HTML, CSS, C#<br>
+              <br><strong>Familiar:</strong> Python, JavaScript<br>
+              <br><strong>Exposure:</strong> C++, Erlang, Rust
             </p>
           </li>
           <li>
             <h3>Software and Tools</h3>
             <p>
-              Proficient: Visual Studio Code, Google Drive<br>
-              <br>Familiar: Tableau, Microsoft Office, Unity<br>
-              <br>Exposure: AWS, Visual Studio
+              <strong>Proficient:</strong> Visual Studio Code, Google Drive<br>
+              <br><strong>Familiar:</strong> Tableau, Microsoft Office, Unity<br>
+              <br><strong>Exposure:</strong> AWS, Visual Studio
             </p>
           </li>
         </ul>
@@ -61,29 +69,30 @@
       <section class="experience">
         <h2>Experience</h2>
         <ul>
-          <li></li>
+          <li>
             <h3>For the Strength of Youth (FSY) Program</h3>
-            <p>May 2024 - August 2024</p>
-            <p>FSY Counselor</p>
-            <p>Mentored groups of 10-15 youth in leadership, teamwork, and personal growth.<br>
-              <br>Led spiritual and recreational activities to foster unity and faith-building experiences.<br>
-              <br>Managed group dynamics, providing emotional support and conflict resolution.</p>
+            <p><strong>May 2024 - August 2024</strong></p>
+            <p><strong>FSY Counselor</strong></p>
+            <p>Spent weeks at a time working on-site in multiple states</p>
+            <p class="bullet">Mentored groups of 10-15 youth in leadership, teamwork, and personal growth</p>
+            <p class="bullet">Led spiritual and recreational activities to foster unity and faith-building experiences</p>
+            <p class="bullet">Managed group dynamics, providing emotional support and conflict resolution</p>
           </li>
           <li>
             <h3>Insight Pest Solutions</h3>
-            <p>April 2023 - August 2023</p>
-            <p>Pest Control Technician</p>
+            <p><strong>April 2023 - August 2023</strong></p>
+            <p><strong>Pest Control Technician</strong></p>
             <p>Edgewood, WA</p>
-            <p>Provided pest control services to eight houses daily, totaling over 600 serviced houses</p>
-            <p>Demonstrated expertise in identifying and addressing pest-related issues efficiently</p>
+            <p class="bullet">Provided pest control services to eight houses daily, totaling over 600 serviced houses</p>
+            <p class="bullet">Demonstrated expertise in identifying and addressing pest-related issues efficiently</p>
           </li>
           <li>
             <h3>Tri-Guard Pest Control</h3>
-            <p>April 2022 - September 2022</p>
-            <p>Pest Control Technician</p>
+            <p><strong>April 2022 - September 2022</strong></p>
+            <p><strong>Pest Control Technician</strong></p>
             <p>Kent, WA</p>
-            <p>Conducted full crawlspace treatments at each house with a commitment to quality service, totaling nearly 1000 houses treated</p>
-            <p>Devoted over 60 hours per week to ensure comprehensive pest control coverage</p>
+            <p class="bullet">Conducted full crawlspace treatments at each house with a commitment to quality service, totaling nearly 1000 houses treated</p>
+            <p class="bullet">Devoted over 60 hours per week to ensure comprehensive pest control coverage</p>
           </li>
         </ul>
       </section>
@@ -92,22 +101,24 @@
         <h2>Awards</h2>
         <ul>
           <li>
-          <p>Eagle Scout (May 2018)</p>
-          <p>DECA District Winner - Principles of Finance (December 2017)</p>
-          <p>Most Internal 5 Star Review, Tri-Guard Pest Control (2022)</p>
+          <p class="bullet">Eagle Scout (May 2018)</p>
+          <p class="bullet">DECA District Winner - Principles of Finance (December 2017)</p>
+          <p class="bullet">Most Internal 5 Star Review, Tri-Guard Pest Control (2022)</p>
         </li>
         </ul>
       </section>
     
       <section class="additional-data">
         <h2>Additional Data</h2>
-        <p>Applied data structures and algorithms in various coding projects, showcasing problem-solving and analytical skills</p>
-        <p>Active member in Computing Society and Web Development Society each week</p>
+        <p class="bullet">Applied data structures and algorithms in various coding projects, showcasing problem-solving and analytical skills</p>
+        <p class="bullet">Demonstrated strong leadership and teamwork skills through managing complex family dynamics as the oldest of 11 siblings and mentoring youth as an FSY Counselor.</p> 
+        <p class="bullet">Excelled in effective communication, conflict resolution, and organizational tasks, ensuring successful group coordination and personal growth in both settings.</p>
       </section>
     </main>
     <footer>
       <p>&copy;2024</p>
       <p>Ty Saltzgiver</p>
+      <p><a href="https://drive.google.com/uc?export=download&id=1zUW_0z-lWUnOP57PyJLzuHTZqrnQ2Gww" download>Download My Resume (PDF)</a></p>
     </footer>
     <script src="resume.js"></script>
 </body>
